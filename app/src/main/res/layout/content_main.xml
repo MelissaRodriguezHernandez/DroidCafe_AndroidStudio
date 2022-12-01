@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/text_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/intro_text"
+            android:textSize="@dimen/text_heading" />
+
+        <TextView
+            android:id="@+id/choose_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/choose_a_dessert"
+            android:textColor="#616161"
+            tools:ignore="MissingConstraints,TextContrastCheck" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/ice_cream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/ice_cream_sandwiches"
+                        android:padding="@dimen/padding_regular"
+                        android:src="@drawable/icecream_circle"
+                        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:id="@+id/textIceCream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_wide"
+                        android:text="@string/ice_cream_sandwiches"
+                        android:textColor="#616161"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/donut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/donut"
+                        android:padding="@dimen/padding_regular"
+                        android:src="@drawable/donut_circle"
+                        tools:ignore="MissingConstraints,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:id="@+id/textDonut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_wide"
+                        android:text="@string/donut"
+                        android:textColor="#616161"
+                        tools:ignore="MissingConstraints,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/froyo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/froyo"
+                        android:padding="@dimen/padding_regular"
+                        android:src="@drawable/froyo_circle"
+                        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:id="@+id/textFroyo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_wide"
+                        android:text="@string/froyo"
+                        android:textColor="#616161"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
